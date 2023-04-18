@@ -1,0 +1,92 @@
+:root {
+    background: linear-gradient(to bottom, #000, #de5b94);
+  }
+
+
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background-repeat: no-repeat;
+  background: linear-gradient(350deg,#de5b94,#c50839,#000);
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex-grow: 0;
+  height: 32px;
+  width: 32px;
+  margin-right: 10px;
+}
+
+.navbar {
+  display: inline;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#main-nav {
+  flex-grow: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Alinea el contenido del menú a la derecha */
+}
+
+#main-nav > li {
+  display: inline-block;
+  margin-right: 20px; /* Puedes ajustar este valor para dar más o menos espacio entre los elementos */
+}
+
+#main-nav > li > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navking {
+  list-style-type: none;
+  display: none;
+}
+
+#main-nav li:hover .navking,
+#main-nav li:hover .navesport{
+  display: block;
+}
+
+.navking, .navesport {
+  display: none;
+  position: absolute;
+  background-color: black;
+}
+
+
+.navesport {
+  list-style-type: none;
+  display: none;
+}
+
+.Hola {
+  text-align: center;
+}
+
+.Privacidad {
+  height: 28px;
+  width: 100px;
+  background-color: blue;
+  position: fixed;
+}
